@@ -24,7 +24,7 @@ footer {
   margin-top: auto;
 }
 
-.form-wrapper {
+.outer-form-container {
   padding: 10px;
   background-color: white;
   box-shadow: 2px 4px 2px grey;
@@ -34,31 +34,45 @@ footer {
   padding: 20px;
 }
 
-.form-wrapper label {
+.outer-form-container label {
   width: 30%;
   display: inline-block;
   text-align: right;
-  padding: 5px;
 }
 
-.form-wrapper input {
-  width: 500px;
-  max-width: 70%;
+.outer-form-container input {
+  width: 60%;
   line-height: 25px;
-  margin: 5px;
 }
 
 .radio-wrapper {
-  flex-direction: column;
+  display: flex;
+  justify-content: flex-end;
+  width: 700px;
+  float: right;
 }
 
 .radio-wrapper label {
-  width: 100px;
   display: inline-block;
   text-align: left;
 }
 
 .radio-wrapper input {
   width: 50px;
-  max-width: 100px;
+}
+
+.radio-pair {
+  width: 300px;
+  margin: auto;
+}
+
+fieldset {
+  float: right;
+  width: 80%;
+}
+
+.inner-form-container {
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
 }

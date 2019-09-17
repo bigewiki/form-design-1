@@ -15,22 +15,50 @@
   </head>
   <body>
     <div class="flex-container">
-      <div class="form-wrapper">
-        <form>
-          <label for="first-name">First Name</label
-          ><input name="first-name" type="text" id="first-name" />
-          <br />
-          <label for="age">Age</label
-          ><input name="age" type="number" id="age" />
-          <div class="radio-wrappers">
-            <input type="radio" id="yes" name="yes" value="yes" />
-            <label for="yes">Yes</label>
-            <input type="radio" id="no" name="no" value="no" />
-            <label for="no">No</label>
-            <input type="radio" id="maybe" name="maybe" value="maybe" />
-            <label for="maybe">Maybe</label>
-          </div>
-        </form>
+      <div class="outer-form-container">
+        <h1>User Creation Form</h1>
+        <div class="inner-form-container">
+          <form>
+            <label for="first-name">First Name</label
+            ><input name="first-name" type="text" id="first-name" />
+            <br />
+            <label for="age">Age</label
+            ><input name="age" type="number" id="age" />
+            <div class="radio-wrapper">
+              <fieldset>
+                <legend>User Role</legend>
+
+                <div class="radio-pair">
+                  <input
+                    type="radio"
+                    id="subscriber"
+                    name="subscriber"
+                    value="subscriber"
+                  />
+                  <label for="subscriber">Subscriber</label>
+                </div>
+                <div class="radio-pair">
+                  <input
+                    type="radio"
+                    id="moderator"
+                    name="moderator"
+                    value="moderator"
+                  />
+                  <label for="moderator">Moderator</label>
+                </div>
+                <div class="radio-pair">
+                  <input
+                    type="radio"
+                    id="editor"
+                    name="editor"
+                    value="editor"
+                  />
+                  <label for="editor">Editor</label>
+                </div>
+              </fieldset>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
     <footer>
