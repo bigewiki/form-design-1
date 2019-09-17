@@ -19,43 +19,51 @@
         <h1>User Creation Form</h1>
         <div class="inner-form-container">
           <form>
-            <label for="first-name">First Name</label
-            ><input name="first-name" type="text" id="first-name" />
-            <br />
-            <label for="age">Age</label
-            ><input name="age" type="number" id="age" />
-            <div class="radio-wrapper">
-              <fieldset>
-                <legend>User Role</legend>
+            <div class="flex-row">
+              <label for="first-name">First Name</label
+              ><input name="first-name" type="text" id="first-name" />
+            </div>
+            <div class="flex-row">
+              <label for="age">Age</label
+              ><input name="age" type="number" id="age" />
+            </div>
+            <div class="flex-row">
+              <div class="radio-wrapper">
+                <fieldset>
+                  <legend>User Role</legend>
 
-                <div class="radio-pair">
-                  <input
-                    type="radio"
-                    id="subscriber"
-                    name="subscriber"
-                    value="subscriber"
-                  />
-                  <label for="subscriber">Subscriber</label>
-                </div>
-                <div class="radio-pair">
-                  <input
-                    type="radio"
-                    id="moderator"
-                    name="moderator"
-                    value="moderator"
-                  />
-                  <label for="moderator">Moderator</label>
-                </div>
-                <div class="radio-pair">
-                  <input
-                    type="radio"
-                    id="editor"
-                    name="editor"
-                    value="editor"
-                  />
-                  <label for="editor">Editor</label>
-                </div>
-              </fieldset>
+                  <div class="radio-pair">
+                    <input
+                      type="radio"
+                      id="subscriber"
+                      name="subscriber"
+                      value="subscriber"
+                    />
+                    <label for="subscriber">Subscriber</label>
+                  </div>
+                  <div class="radio-pair">
+                    <input
+                      type="radio"
+                      id="moderator"
+                      name="moderator"
+                      value="moderator"
+                    />
+                    <label for="moderator">Moderator</label>
+                  </div>
+                  <div class="radio-pair">
+                    <input
+                      type="radio"
+                      id="editor"
+                      name="editor"
+                      value="editor"
+                    />
+                    <label for="editor">Editor</label>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            <div class="flex-row">
+              <input name="submit" value="submit" type="submit" />
             </div>
           </form>
         </div>
