@@ -40,7 +40,7 @@
               />
             </div>
             <div class="flex-row">
-              <label for="last-name">Password</label
+              <label for="password">Password</label
               ><input
                 size="16"
                 maxlength="16"
@@ -55,7 +55,7 @@
             </div>
             <div class="flex-row">
               <label for="skills">Skills</label>
-              <select multiple name="skills" size="6">
+              <select multiple name="skills" id="skills" size="6">
                 <option value="nunchucks">Nunchucks</option>
                 <option value="bow-hunting">Bow Hunting</option>
                 <option value="computer-hacking">Computer Hacking</option>
@@ -66,7 +66,7 @@
             </div>
             <div class="flex-row">
               <label for="role">Role</label>
-              <select name="role">
+              <select id="role" name="role">
                 <option style="display:none" value="">Select a Role</option>
                 <option value="subscriber">Subscriber</option>
                 <option value="moderator">Moderator</option>
@@ -81,6 +81,7 @@
                 size="255"
                 maxlength="255"
                 name="bio"
+                id="bio"
                 placeholder="Tell us a bit about yourself (in 255 characters or less)"
               ></textarea>
             </div>
