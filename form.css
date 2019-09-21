@@ -85,7 +85,8 @@ input:focus {
   background-color: #eaeaea;
 }
 
-input[type="submit"] {
+input[type="submit"],
+input[type="reset"] {
   width: 400px;
   box-sizing: border-box;
   text-transform: uppercase;
@@ -96,11 +97,20 @@ input[type="submit"] {
   border-width: 2px;
   border-style: groove;
   border-color: threedface;
+  cursor: pointer;
 }
 
 input[type="submit"]:hover {
   background-color: #3285c0;
   cursor: pointer;
+}
+
+input[type="reset"] {
+  background-color: #830f0f;
+}
+
+input[type="reset"]:hover {
+  background-color: #9b3e3e;
 }
 
 .radio-wrapper {

@@ -18,22 +18,40 @@
       <div class="outer-form-container">
         <h1>User Creation Form</h1>
         <div class="inner-form-container">
-          <form action="#">
+          <form method="get" action="#">
             <div class="flex-row">
               <label for="email">Email</label
-              ><input name="email" type="email" id="email" />
+              ><input
+                name="email"
+                type="email"
+                id="email"
+                size="99"
+                maxlength="99"
+              />
             </div>
             <div class="flex-row">
               <label for="username">Username</label
-              ><input name="username" type="text" id="username" />
+              ><input
+                size="12"
+                maxlength="12"
+                name="username"
+                type="text"
+                id="username"
+              />
             </div>
             <div class="flex-row">
               <label for="last-name">Password</label
-              ><input name="password" type="password" id="password" />
+              ><input
+                size="16"
+                maxlength="16"
+                name="password"
+                type="password"
+                id="password"
+              />
             </div>
             <div class="flex-row">
               <label for="age">Age</label
-              ><input name="age" type="number" id="age" />
+              ><input name="age" min="1" type="number" id="age" />
             </div>
             <div class="flex-row">
               <label for="skills">Skills</label>
@@ -60,8 +78,10 @@
             <div class="flex-row">
               <label for="bio">Biography</label>
               <textarea
+                size="255"
+                maxlength="255"
                 name="bio"
-                placeholder="Tell us a bit about yourself"
+                placeholder="Tell us a bit about yourself (in 255 characters or less)"
               ></textarea>
             </div>
             <div class="flex-row checkbox-row">
@@ -116,6 +136,7 @@
                       id="mountain-standard"
                       name="timezone"
                       value="mountain-standard"
+                      checked="checked"
                     />
                     <label for="mountain-standard"
                       >Moutain Standard (Arizona)</label
@@ -153,6 +174,7 @@
             </div>
             <input type="hidden" name="user-form" value="create" />
             <div class="flex-row">
+              <input type="reset" />
               <input name="submit" value="submit" type="submit" />
             </div>
           </form>
