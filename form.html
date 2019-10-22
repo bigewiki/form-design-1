@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>A Form!</title>
+    <title>A Javascript Form!</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="dcterms.rightsHolder" content="Edward M." />
@@ -12,13 +12,18 @@
       content="super amazing awesome incredible fantastic cool"
     />
     <link rel="stylesheet" type="text/css" href="form.css" />
+    <script>
+      document.getElementById(
+        "validator"
+      ).innerHTML = `<a href="http://validator.w3.org/nu/?doc=${window.location.href}" target="_blank">HTML 5 Validation</a>`;
+    </script>
   </head>
   <body>
     <div class="flex-container">
       <div class="outer-form-container">
         <h1>User Creation Form</h1>
         <div class="inner-form-container">
-          <form method="get" action="#">
+          <form method="get">
             <div class="flex-row">
               <label for="email">Email</label
               ><input
@@ -56,23 +61,40 @@
             <div class="flex-row">
               <label for="skills">Skills</label>
               <select multiple name="skills" id="skills" size="6">
-                <option value="nunchucks">Nunchucks</option>
-                <option value="bow-hunting">Bow Hunting</option>
-                <option value="computer-hacking">Computer Hacking</option>
-                <option value="yodeling">Yodeling</option>
-                <option value="fast-rapping">Fast Rapping</option>
-                <option value="talking-backwards">Talking Backwards</option>
+                <optgroup label="Practical?">
+                  <option value="nunchucks">Nunchucks</option>
+                  <option value="bow-hunting">Bow Hunting</option>
+                  <option value="computer-hacking">Computer Hacking</option>
+                </optgroup>
+                <optgroup label="Entertaining?">
+                  <option value="yodeling">Yodeling</option>
+                  <option value="fast-rapping">Fast Rapping</option>
+                  <option value="talking-backwards">Talking Backwards</option>
+                </optgroup>
               </select>
             </div>
             <div class="flex-row">
               <label for="role">Role</label>
               <select id="role" name="role">
                 <option style="display:none" value="">Select a Role</option>
-                <option value="subscriber">Subscriber</option>
-                <option value="moderator">Moderator</option>
-                <option value="contributor">Contributor</option>
-                <option value="author">Author</option>
-                <option value="admin">Admin</option>
+                <optgroup label="Comment only">
+                  <option value="subscriber">Subscriber</option>
+                </optgroup>
+                <optgroup label="Can remove comments">
+                  <option value="moderator">Moderator</option>
+                </optgroup>
+                <optgroup label="Can edit posts">
+                  <option value="contributor">Contributor</option>
+                </optgroup>
+                <optgroup label="Can create posts">
+                  <option value="author">Author</option>
+                </optgroup>
+                <optgroup label="Can edit other's pages/posts">
+                  <option value="editor">Editor</option>
+                </optgroup>
+                <optgroup label="Superuser privilages">
+                  <option value="admin">Admin</option>
+                </optgroup>
               </select>
             </div>
             <div class="flex-row">
@@ -183,11 +205,6 @@
     </div>
     <footer>
       <div id="validator"></div>
-      <script>
-        document.getElementById(
-          "validator"
-        ).innerHTML = `<a href="http://validator.w3.org/nu/?doc=${window.location.href}" target="_blank">HTML 5 Validation</a>`;
-      </script>
     </footer>
   </body>
 </html>
